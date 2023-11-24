@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "EX",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.bilibili.com/*"],
+      "js": ["independent/bilibili.js"]
+    },
+    {
+      "matches": ["*://*.baidu.com/*"],
+      "js": ["independent/baidu.js"]
+    },
+    {
+      "matches": ["*://tieba.baidu.com/*"],
+      "js": ["independent/baidutieba.js"]
+    },
+    {
+      "matches": ["*://*.zhihu.com/*"],
+      "js": ["independent/zhihu.js"]
+    },
+    {
+      "matches": ["*://*.btbtt15.com/*"],
+      "js": ["independent/btbtt15.js"]
+    },
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["independent/youtube.js"]
+    }
+  ]
+}
